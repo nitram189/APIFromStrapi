@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "cursos",
+  "info": {
+    "singularName": "curso",
+    "pluralName": "cursos",
+    "displayName": "Curso",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

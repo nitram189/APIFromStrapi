@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tornetas",
+  "info": {
+    "singularName": "torneta",
+    "pluralName": "tornetas",
+    "displayName": "Tornetas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
